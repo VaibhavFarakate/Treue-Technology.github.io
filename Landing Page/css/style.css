@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nunito+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dai+Banna+SIL&family=Nunito+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +12,11 @@
   --ribbonBg: #ffffff;
   --ribbonText: #3c2b7f;
   --menuHover: #f06292;
+  --btncolor: #435a6b;
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Dai Banna SIL", serif;
   background-color: var(--bodyColor);
 }
 a {
@@ -22,4 +25,22 @@ a {
 }
 .navbar li a {
   padding: 10px;
+}
+.logo {
+  font-family: "Bungee Spice", cursive;
+}
+.menu li {
+  background-color: #435a6b;
+  color: #e2def3;
+  opacity: 10;
+}
+.mainContent {
+  margin-top: 423px;
+}
+footer {
+  background-color: #3c2b7f;
+  color: #435a6b;
+}
+footer ul {
+  list-style: none;
 }
