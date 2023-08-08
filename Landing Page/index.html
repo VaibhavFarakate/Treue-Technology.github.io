@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a8bd11c7f2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <img src="images/neon-megapolis-background-with-buildings-skyscrapers_1441-2489.webp" alt=""
-        class="img-fluid position-absolute">
+    <div class="position-absolute"><img src="images/neon-megapolis-background-with-buildings-skyscrapers_1441-2489.webp"
+            alt="" class="img-fluid">
+    </div>
     <div class="position-relative">
         <div class="navbar  d-flex justify-content-between mx-2">
             <div class="logo">
@@ -51,93 +51,108 @@
         </div>
 
     </div>
-    <div class="container">
-        <div>
-            <h4>Explore Courses</h4>
+    <div class="container-fluid courses">
+        <div class="card p-2 cardDiv">
+            <h4 class="pt-2 ps-2">Explore Courses</h4>
             <hr>
-            <div class="row ">
-                <div class="col-4">
-                    <img class="img-fluid img-thumbnail" src="images/gradient-stock-market-concept_23-2149166910.webp"
-                        alt="corse1">
-                    <div class="text-center my-3">
-                        <h5>Stock Trading</h5>
-                        <a href="#" class="text-decoration-underline">know more</a>
+            <div class="row p-2">
+                <div class="col">
+                    <div class="card courseThumbnail">
+                        <img class="img-fluid img-thumbnail image"
+                            src="images/gradient-stock-market-concept_23-2149166910.webp" alt="corse1">
+                        <div class="middle">
+                            <button class="btn btn-warning">Know More</button>
+                        </div>
+                        <div class="text-center my-3">
+                            <h5>Stock Market Trading</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid img-thumbnail" src="images/forex.png" alt="corse2">
-                    <div class="text-center my-3">
-                        <h5>Forex Trading</h5>
-                        <a href="#" class="text-decoration-underline">know more</a>
+                <div class="col">
+                    <div class="card courseThumbnail">
+                        <img class="img-fluid img-thumbnail image" src="images/forex1.png" alt="corse2">
+                        <div class="middle">
+                            <button class="btn btn-warning">Know More</button>
+                        </div>
+                        <div class="text-center my-3">
+                            <h5>Forex Trading</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid img-thumbnail" src="images/futures.jpg" alt="corse3">
-                    <div class="text-center my-3">
-                        <h5>Futures & Options </h5>
-                        <a href="#" class="text-decoration-underline">know more</a>
+                <div class="col">
+                    <div class="card courseThumbnail">
+                        <img class="img-fluid img-thumbnail image" src="images/futures1.jpg" alt="corse3">
+                        <div class="middle">
+                            <button class="btn btn-warning">Know More</button>
+                        </div>
+                        <div class="text-center my-3">
+                            <h5>Futures & Options </h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container my-4">
-        <h4>Enquiry</h4>
-        <hr>
-        <form class="needs-validation" novalidate>
-            <div class="row">
-                <div class="col-6">
-                    <div class="input-group">
-                        <span class="input-group-text" id="Name">Name * :</span>
-                        <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username"
-                            required>
-                        <div class="invalid-feedback">
-                            Please enter your name
+    <div class="container-fluid mt-4">
+        <div class="card cardDiv p-3">
+            <h4>Enquiry</h4>
+            <hr>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group">
+                            <span class="input-group-text" id="Name">Name * :</span>
+                            <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username"
+                                required>
+                            <div class="invalid-feedback">
+                                Please enter your name
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="input-group">
-                        <span class="input-group-text" id="Name">Mobile * :</span>
-                        <input type="text" class="form-control" placeholder="Enter your mobile number"
-                            aria-label="mobileNumber" required>
-                        <div class="invalid-feedback">
-                            Please enter your contact number
+                    <div class="col-6">
+                        <div class="input-group">
+                            <span class="input-group-text" id="Name">Mobile * :</span>
+                            <input type="text" class="form-control" placeholder="Enter your mobile number"
+                                aria-label="mobileNumber" required>
+                            <div class="invalid-feedback">
+                                Please enter your contact number
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 my-3">
-                    <div class="input-group">
-                        <span class="input-group-text" id="Name">Course :</span>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>select </option>
-                            <option value="1">Stock Market Trading</option>
-                            <option value="2">Forex Trading</option>
-                            <option value="3">Futures and Options</option>
-                        </select>
+                    <div class="col-6 my-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="Name">Course :</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>select </option>
+                                <option value="1">Stock Market Trading</option>
+                                <option value="2">Forex Trading</option>
+                                <option value="3">Futures and Options</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 my-3">
-                    <div class="input-group">
-                        <span class="input-group-text" id="Name">Email :</span>
-                        <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Email">
+                    <div class="col-6 my-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="Name">Email :</span>
+                            <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Email">
 
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea class="form-control" name="comment" id="enquiry" placeholder="Message...."
+                            required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" type="submit">Submit</button>
                     </div>
                 </div>
-                <div class="col-12 mb-3">
-                    <textarea class="form-control" name="comment" id="enquiry" placeholder="Message...."
-                        required></textarea>
-                </div>
-                <div class="col-12 text-center">
-                    <button class="btn btn-success" type="submit">Submit</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
+
 
     </div>
     <footer class="bg-black text-white">
         <div class="container ">
-            <div class="row text-center pt-4">
+            <div class="row  pt-4">
                 <div class="col-4">
                     <h5>Office</h5>
                     <hr>
@@ -162,10 +177,14 @@
                     <h5>Reach Us at</h5>
                     <hr>
                     <ul>
-                        <li><a href="#"><i class="fa-brands fa-youtube" style="color: #702a2a;"></i>YouTube</a></li>
-                        <li><a href="#"> <i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
-                        <li><a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube me-1" style="color: #ffffff;"></i>YouTube</a>
+                        </li>
+                        <li><a href="#"><i class="fa-brands fa-instagram me-1" style="color: #ffffff;"></i>Instagram</a>
+                        </li>
+                        <li><a href="#"><i class="fa-brands fa-twitter me-1" style="color: #ffffff;"></i>Twitter</a>
+                        </li>
+                        <li><a href="#"><i class="fa-brands fa-facebook me-1" style="color: #ffffff;"></i>Facebook</a>
+                        </li>
                     </ul>
                 </div>
             </div>
